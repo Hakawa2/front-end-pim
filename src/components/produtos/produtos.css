@@ -46,3 +46,9 @@
 .produtos-card div:last-child {
   margin-top: auto;
 }
+
+@media (max-width: 840px) {
+  .produtos-container {
+    flex-direction: column;
+  }
+}
