@@ -1,13 +1,13 @@
 import React from "react";
 import Body from "../../components/body/body";
 import Header from "../../components/header/header";
-import HomeComponent from "../../components/home/home";
+import Produtos from "../../containers/produtos/produtos";
 
 const Planos = () => {
   return (
     <>
       <Header />
-      <Body children={"teste planos"} />
+      <Body children={<Produtos />} />
     </>
   );
 };
