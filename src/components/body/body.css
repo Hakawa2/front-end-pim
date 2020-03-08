@@ -1,0 +1,49 @@
+.body-container {
+  position: absolute;
+  width: 100%;
+  height: 88%;
+  overflow: hidden;
+}
+
+.background-animation-left,
+.background-animation-right {
+  background-color: #5000ca;
+}
+
+.background-animation-left {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  animation: background-animation-left 4s;
+  animation-fill-mode: forwards;
+  transform: skew(16deg) translateX(-100px);
+}
+
+.background-animation-right {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  right: 0;
+  animation: background-animation-right 4s;
+  animation-fill-mode: forwards;
+  transform: skew(16deg) translateX(100px);
+}
+
+@keyframes background-animation-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes background-animation-right {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100%;
+  }
+}

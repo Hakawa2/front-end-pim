@@ -1,0 +1,12 @@
+.main-container {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 1% !important;
+}
+
+.main-container * {
+  width: 100%;
+}
