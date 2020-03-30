@@ -4,7 +4,7 @@ import React from "react";
 import "./container.css";
 
 const Container = ({ children }) => {
-  return <div className="main-container container">{children}</div>;
+	return <div className="main-container container">{children}</div>;
 };
 
 export default Container;
