@@ -8,7 +8,7 @@ import MenuResponsive from "./responsive/menu";
 import "./header.css";
 
 //img
-
+import logo from "../../img/logo.png"
 
 const Header = ({close, showMenu, open}) => {
 
@@ -17,7 +17,7 @@ const Header = ({close, showMenu, open}) => {
 	return (
 		<div className="header-container">
 			<div className="nav-logo container">
-				<AnchorLink href='#home' onClick={mobile && (() => showMenu())}>logo</AnchorLink>
+				<AnchorLink href='#home' onClick={mobile && (() => showMenu())}><img src={logo}/></AnchorLink>
 				{mobile ? <MenuResponsive close={() => close()} open={open}/> : <div>
 					<AnchorLink href='#home'>Home</AnchorLink>
 					<AnchorLink href='#sobre'>Sobre</AnchorLink>

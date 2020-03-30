@@ -1,44 +1,11 @@
-.home-container {
-	justify-content: space-between;
-	font-family: 'Exo', sans-serif !important;
+.first-container {
+	margin: 10% 0 5% 2%;
 }
 
-
-.home-container {
-	margin: 5% 0 auto 50px;
+.first-container img {
+	width: 90%;
 }
 
-.home-container span {
-	text-align: center;
-}
-
-.home-container h1,
-.home-container h2,
-.home-container h3 {
-	margin: 0;
-}
-
-.home-container h1 {
-	color: #94d413;
-	font-size: 75px;
-}
-
-.home-container h2 {
-	font-size: 45px;
-	color: #70a704;
-}
-
-.home-container h3 {
-	color: #70a704;
-}
-
-.home-container h4 {
-	color: #820aad;
-}
-
-.home-container h4:hover {
-	color: #5d1a75;
-}
 
 .home-image-container img {
 	width: 600px;
@@ -49,6 +16,15 @@
 
 	.home-container {
 		margin: 0;
+	}
+
+
+
+	.first-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 15% 0 0 0;
 	}
 	
 
