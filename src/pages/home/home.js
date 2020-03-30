@@ -1,10 +1,11 @@
 import React from "react";
+import Body from "../../components/body/body";
 import HomeComponent from "../../components/home/home";
 
 const Home = () => {
 	return (
 		<>
-			<HomeComponent />
+			<Body children={<HomeComponent />} loading/>
 		</>
 	);
 };

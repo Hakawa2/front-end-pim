@@ -3,12 +3,12 @@ import Container from "./container/container";
 //style
 import "./body.css";
 
-const Body = ({ children }) => {
+const Body = ({ children, loading }) => {
 	const [fakeLoading, setFakeLoading] = useState(true);
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setFakeLoading(false);
-		}, 5000);
+		}, 2000);
 		return () => clearTimeout(timer);
 	}, []);
 
@@ -24,9 +24,9 @@ const Body = ({ children }) => {
 
 	return (
 		<>
-			{fakeLoading ? (
+			{fakeLoading && loading ? (
 				open()
-			) : (
+			) : !fakeLoading && (
 				<div>
 					<Container children={children} />
 				</div>
