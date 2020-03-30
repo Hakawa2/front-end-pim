@@ -7,6 +7,9 @@ import MenuResponsive from "./responsive/menu";
 //css
 import "./header.css";
 
+//img
+
+
 const Header = ({close, showMenu, open}) => {
 
 	const mobile = useMediaQuery({ query: "(max-device-width: 840px)" })
