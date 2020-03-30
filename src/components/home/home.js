@@ -5,18 +5,14 @@ import "./home.css";
 
 // img
 import freelancer from "../../img/freelancer.png";
+import total from "../../img/total.png";
 
 
 const Home = () => (
   	<Row className="reverse-responsive">
 		<Col xs={12} sm={12} md={4} lg={6}>
 			<div className="home-container">
-				<h2>Welcome To </h2>
-				<h1>For Freelancers</h1>
-				<span>
-					<h3>Feito pela comunidade, para a comunidade.</h3>
-					<h4>Role a página para conhecer nossa história</h4>
-				</span>
+				<img src={total}/>
 			</div>
 		</Col>
 		<Col xs={12} sm={12} md={4} lg={6}>
