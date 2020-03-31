@@ -24,19 +24,133 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: #e1e1e1;
+  background-color: #eeee;
+  /* background-image: url("../../img/bg.png"); */
   font-family: "Segoe UI" !important;
 }
 
 .container {
-  width: 85%;
+  width: 95%;
   justify-content: center;
   margin: 0 auto 0 auto;
   height: 100%;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.tooltip-titulo {
+	padding: 5px 5px 5px 5px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.tooltip-descricao {
+	padding: 5px 5px 5px 5px;
+	text-align: left;
+}
+
+.tooltip.show {
+	opacity: 1;
+}
+
+.tooltip-inner {
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+	background-color: #222745;
+	border: 1px solid #222745;
+	max-width: 260px;
+	color: white;
+}
+
+.bs-tooltip-top .arrow,
+.bs-tooltip-right .arrow,
+.bs-tooltip-auto[x-placement ^= top] .arrow,
+.bs-tooltip-auto[x-placement ^= right] .arrow {
+	bottom: 1px;
+}
+
+.bs-tooltip-top .arrow::before,
+.bs-tooltip-auto[x-placement ^= top] .arrow::before {
+	border-top-color: #222745;
+}
+
+.bs-tooltip-right .arrow::before,
+.bs-tooltip-auto[x-placement ^= right] .arrow::before {
+	border-right-color: #222745;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.row { 
+	min-height: 100vh;
+}
+
+.max-width {
+	width: 100%;
+	margin: 0;
+}
+
+.ReactModal__Content  {
+	background-color: #231f20;
+}
+
+.slide-pane__header {
+	background-color: #eeee !important;
+	flex: 0 !important;
+	justify-content: center !important;
+	flex-direction: row-reverse;
+	height: 50px !important;
+}
+
+.slide-pane__content {
+	padding: 0 !important;
+}
+
+.slide-pane__title {
+	font-size: 26px !important;
+	font-weight: bold !important;
+	height: 40px;
+	width: 100% !important;
+}
+
+.slide-pane__subtitle {
+	display: none;
+}
+
+.slide-pane__title-wrapper {
+	margin: auto 10px !important;
+}
+
+.slide-pane__close {
+	margin: 0 !important;
+	transform: rotate(180deg);
+}
+
+.slide-pane_from_left {
+	width: 50% !important;
+	z-index: 100000000000000;
 }
 
 @media (max-width: 840px) {
   .container {
     width: 95%;
   }
+
 }

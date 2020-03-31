@@ -2,23 +2,26 @@ import React from "react";
 import Home from "../../pages/home/home";
 import Planos from "../../pages/planos/planos";
 import Sobre from "../../pages/sobre/sobre";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Header from "../../containers/header/header"
 
 //style
 import "./app.css";
 
 const App = () => {
-  return (
-    <>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/planos" component={Planos} />
-          <Route path="/sobre" component={Sobre} />
-        </Switch>
-      </BrowserRouter>
-    </>
-  );
+	return (
+		<>
+			<Header/>
+			<section id='home'>
+				<Home />
+			</section>
+			<section id='planos'>
+				<Sobre/>
+			</section>
+			<section id='planos'>
+				<Planos/>
+			</section>
+		</>
+	);
 };
 
 export default App;

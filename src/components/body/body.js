@@ -3,36 +3,36 @@ import Container from "./container/container";
 //style
 import "./body.css";
 
-const Body = ({ children }) => {
-  const [fakeLoading, setFakeLoading] = useState(true);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setFakeLoading(false);
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, []);
+const Body = ({ children, loading, home }) => {
+	const [fakeLoading, setFakeLoading] = useState(true);
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setFakeLoading(false);
+		}, 2000);
+		return () => clearTimeout(timer);
+	}, []);
 
-  const open = () => {
-    return (
-      <div className="loading-container">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    );
-  };
+	const open = () => {
+		return (
+			<div className="loading-container">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		);
+	};
 
-  return (
-    <>
-      {fakeLoading ? (
-        open()
-      ) : (
-        <div>
-          <Container children={children} />
-        </div>
-      )}
-    </>
-  );
+	return (
+		<>
+			{fakeLoading && loading ? (
+				open()
+			) : !fakeLoading && (
+				<div>
+					<Container home={home} children={children} />
+				</div>
+			)}
+		</>
+	);
 };
 
 export default Body;
