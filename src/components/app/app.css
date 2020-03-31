@@ -25,6 +25,7 @@ body {
   padding: 0;
   min-height: 100vh;
   background-color: #eeee;
+  /* background-image: url("../../img/bg.png"); */
   font-family: "Segoe UI" !important;
 }
 
@@ -101,13 +102,55 @@ body {
 	min-height: 100vh;
 }
 
+.max-width {
+	width: 100%;
+	margin: 0;
+}
+
+.ReactModal__Content  {
+	background-color: #231f20;
+}
+
+.slide-pane__header {
+	background-color: #eeee !important;
+	flex: 0 !important;
+	justify-content: center !important;
+	flex-direction: row-reverse;
+	height: 50px !important;
+}
+
+.slide-pane__content {
+	padding: 0 !important;
+}
+
+.slide-pane__title {
+	font-size: 26px !important;
+	font-weight: bold !important;
+	height: 40px;
+	width: 100% !important;
+}
+
+.slide-pane__subtitle {
+	display: none;
+}
+
+.slide-pane__title-wrapper {
+	margin: auto 10px !important;
+}
+
+.slide-pane__close {
+	margin: 0 !important;
+	transform: rotate(180deg);
+}
+
+.slide-pane_from_left {
+	width: 50% !important;
+	z-index: 100000000000000;
+}
 
 @media (max-width: 840px) {
   .container {
     width: 95%;
   }
 
-  .reverse-responsive {
-	flex-direction: column-reverse !important;
-  }
 }
