@@ -1,0 +1,26 @@
+.pages-container {
+	background-color: #231f20;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.pages-container:hover {
+	background-color: #2f2b2d;
+}
+
+.pages-container a {
+	font-size: 24px;
+	font-family: 'Exo', sans-serif;
+	margin: 0;
+	font-weight: 800;
+	color: #004aad;
+	text-shadow: 1px 1px rgba(131, 131, 131, 0.217);
+	text-transform: uppercase;
+}
+
+.pages-container a:hover {
+	text-decoration: none;
+
+}

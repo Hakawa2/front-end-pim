@@ -1,31 +1,26 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { useMediaQuery } from "react-responsive";
+import Particles from "../UI/particles"
+
 // css
 import "./home.css";
 
-// img
-import freelancer from "../../img/freelancer.png";
-import total from "../../img/total.png";
-
 
 const Home = () => {
-	const mobile = useMediaQuery({ query: "(max-device-width: 840px)" })
-
 
   	return(
-	  	<Row>
-			<Col xs={12} sm={12} md={6} lg={6} className="no-padding">
-				<div className="first-container">
-					<img src={total}/>
+	  	<Row className="no-padding max-width">
+			<Col xs={12} sm={12} md={12} lg={12} className="no-padding">
+				<div className="text-home-container">
+					<Particles/>
+					<div style={{ position: "absolute" }}>
+						<h2>Bem vindos a </h2>
+						<h1>For freelancers</h1>
+						<h3>Feito pela comunidade para a comunidade</h3>
+						<h4>Role a página e conheça mais de nossa história, e venha fazer parte dessa incrível família</h4>
+					</div>
 				</div>
 			</Col>
-			{!mobile && 
-			<Col xs={12} sm={12} md={6} lg={6}>
-				<div className="home-image-container">
-					<img src={freelancer} alt="Art vector created by stories - www.freepik.com" />
-				</div>
-			</Col>}
 		</Row>
 	)
 }
