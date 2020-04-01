@@ -28,7 +28,7 @@ export const Empresas = [
 		name: "Plano Startup",
 		price: "R$ 19,99",
 		desc: "deadfeadasdfrefadssdfdsasdsdfafasdfasagsdgsdwegeeg",
-		type: "startup"
+		type: "start"
 	},
 	{
 		id: "2",

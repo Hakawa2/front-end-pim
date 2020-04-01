@@ -13,7 +13,9 @@ import "./produtos.css";
 import junior from "../../img/junior.png";
 import pleno from "../../img/pleno.png";
 import senior from "../../img/senior.png";
-
+import start from "../../img/start.png";
+import mid from "../../img/mid.png";
+import multi from "../../img/multi.png";
 
 const DataFreelancer = ({ id, type, name, desc, price, icon }) => {
 	return (
@@ -71,6 +73,12 @@ const Produtos = ({ produtos, produtosEmpresas, selectCard, selected }) => {
 				return pleno;
 			case tiposPlanos.PREMIUM:
 				return senior;
+			case tiposPlanos.START:
+				return start;
+			case tiposPlanos.MID:
+				return mid;
+			case tiposPlanos.MULTI:
+				return multi;
 			default:
 				return junior;
 		}
