@@ -4,6 +4,8 @@ import Planos from "../../pages/planos/planos";
 import Sobre from "../../pages/sobre/sobre";
 import Header from "../../containers/header/header"
 
+import "react-tabs/style/react-tabs.css";
+
 //style
 import "./app.css";
 
