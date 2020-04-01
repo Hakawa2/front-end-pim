@@ -1,4 +1,5 @@
 import React from "react";
+import { Tabs, Tab } from "react-bootstrap";
 
 //utils
 import * as tiposPlanos from "../../utils/tipoPlanos";
@@ -49,7 +50,25 @@ const Produtos = ({ produtos }) => {
 		});
 	};
 
-	return <div className="produtos-container">{produtosMap()}</div>;
+	return( 
+		<div className="produtos-container">
+			<div>
+				<h1>Conheça Nossos Planos</h1>
+			</div>
+			<Tabs defaultActiveKey={"empresas"} className="planos-tabs" >
+				<Tab eventKey="freelancers" title="Freelancers">
+					<div className="itens-container">
+						{produtosMap()}
+					</div>
+				</Tab>
+				<Tab eventKey="empresas" title="Empresas">
+					<div className="itens-container">
+						{produtosMap()}
+					</div>
+				</Tab>
+			</Tabs>
+		</div>
+	)
 };
 
 export default Produtos;
