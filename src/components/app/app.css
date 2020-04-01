@@ -29,6 +29,14 @@ body {
   font-family: "Segoe UI" !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Exo', sans-serif;
+	margin: 0;
+	font-weight: 800;
+	color: #004aad;
+	text-shadow: 1px 1px rgba(131, 131, 131, 0.217);
+}
+
 .container {
   width: 95%;
   justify-content: center;
