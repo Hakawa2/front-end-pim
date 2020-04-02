@@ -17,9 +17,9 @@ import start from "../../img/start.png";
 import mid from "../../img/mid.png";
 import multi from "../../img/multi.png";
 
-const DataFreelancer = ({ id, type, name, desc, price, icon }) => {
+const DataFreelancer = ({ id, type, name, desc, price, icon, selected }) => {
 	return (
-		<div className="produtos-card" key={id}>
+		<div className={`produtos-card ${selected ? "active" : ""}`} key={id}>
 			<div>
 				<img src={icon(type)} alt={type} />
 			</div>
@@ -39,9 +39,9 @@ const DataFreelancer = ({ id, type, name, desc, price, icon }) => {
 	)
 }
 
-const DataEmpresa = ({ id, type, name, desc, price, icon }) => {
+const DataEmpresa = ({ id, type, name, desc, price, icon, selected }) => {
 	return (
-		<div className="produtos-card" key={id}>
+		<div className={`produtos-card ${selected ? "active" : ""}`} key={id}>
 			<div>
 				<img src={icon(type)} alt={type} />
 			</div>
