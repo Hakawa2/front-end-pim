@@ -16,7 +16,7 @@ const App = () => {
 			<section id='home'>
 				<Home />
 			</section>
-			<section id='planos'>
+			<section id='sobre'>
 				<Sobre/>
 			</section>
 			<section id='planos'>
