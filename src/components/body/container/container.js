@@ -4,7 +4,12 @@ import React from "react";
 import "./container.css";
 
 const Container = ({ children, home }) => {
-	return <div className={ home ? "" : "main-container container" }>{children}</div>;
+	return (
+		<>
+			<div className={ home ? "" : "main-container" }>
+				{children}
+			</div>
+		</>);
 };
 
 export default Container;

@@ -1,0 +1,16 @@
+.sobre-header > h1 {
+	margin: 70px 0 20px 0;
+}
+
+.texto-sobre-container {
+	display: flex;
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.img-sobre-container {
+	width: 100%;
+	border-radius: 10px;
+	margin-top: 70px;
+}
