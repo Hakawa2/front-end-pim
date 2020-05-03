@@ -1,8 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { Carousel } from "react-responsive-carousel";
-
-//utils
+import Feedback from "../feedback"
 
 //style
 import "./produtos.css";
@@ -82,6 +81,7 @@ const Produtos = ({ produtos, produtosEmpresas }) => {
 					</div>
 				</Col>
 			</Row>
+			<Feedback/>
 		</div>
 	)
 };

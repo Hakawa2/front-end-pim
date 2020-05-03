@@ -53,9 +53,8 @@
 }
 
 .mobile-header-container img:first-child {
-	width: 30px;
-	height: 30px;
 	margin-right: 5px;
+    margin-top: 7px;
 }
 
 @media (max-width: 840px) {
