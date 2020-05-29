@@ -4,7 +4,8 @@
 
 .texto-sobre-container {
 	display: flex;
-    text-align: left;
+	text-align: left;
+	flex-direction: column;
     font-size: 18px;
     padding: 10px;
 }
