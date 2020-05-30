@@ -39,8 +39,8 @@ const FeedbackArea = () => {
 						<img src={userImage(user.sexo, user.idade)}/>
 					</div>
 					<div>
-						<h1>{user.nome}</h1>
-						<h2>{`${user.mensagem}`}</h2>
+						<h1>{`${user.nome}, ${user.idade}`}</h1>
+						<h2>{user.mensagem}</h2>
 					</div>
 				</div>
 			)
