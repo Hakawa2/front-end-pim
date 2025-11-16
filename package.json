@@ -18,8 +18,8 @@
     "react-responsive": "^8.0.3",
     "react-responsive-carousel": "^3.2.5",
     "react-router-dom": "5.0.1",
-    "react-scripts": "3.4.0",
-    "react-sliding-pane": "^4.0.1",
+    "react-scripts": "5.0.1",
+    "react-sliding-pane": "^7.3.0",
     "react-tabs": "^3.1.0"
   },
   "scripts": {
@@ -44,7 +44,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^9.39.1",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
